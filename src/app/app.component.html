@@ -1,0 +1,102 @@
+<div class="container">
+  <nav class="bg-success" id="thanhmenu" style="height: 60px">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Quản lý dự án</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Giới thiệu</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Quản lý dự án
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#" routerLink="/du_an/them"
+                    >Thêm dự án</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" routerLink="/du_an"
+                    >Hiển thị danh sách dự án</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Quản lý task
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#" routerLink="/task/them"
+                    >Thêm task mới</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" routerLink="/task"
+                    >Hiển thị danh sách các task</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Quản lý nhân viên
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#" routerLink="/nhan_vien/them"
+                    >Thêm nhân viên</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" routerLink="/nhan_vien"
+                    >Hiển thị danh sách nhân viên</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </nav>
+  <main class="d-flex" style="min-height: 300px">
+    <article class="col-md-12 bg-info-subtle" id="cottrai">
+      <router-outlet></router-outlet>
+    </article>
+  </main>
+  <footer class="bg-success text-white text-center text-uppercase py-3" style="height: 45px">Cổ Nhẩn Thi-ps34847</footer>
+</div>

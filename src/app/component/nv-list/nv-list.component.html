@@ -1,0 +1,22 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">tên nhân viên</th>
+        <th scope="col">ngày sinh</th>
+        <th scope="col">giới tính</th>
+        <th scope="col">Địa chỉ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let nv of list_nv">
+        <th scope="row">{{nv.id}}</th>
+        <td>{{nv.name}}</td>
+        <td>{{nv.ngay_sinh|date:'dd-MM-yyyy'}}</td>
+        <td>{{nv.gioi_tinh == true? 'Nam' : 'Nữ'}}</td>
+
+        <td>{{nv.dia_chi}}</td>
+      </tr>
+      
+    </tbody>
+  </table>

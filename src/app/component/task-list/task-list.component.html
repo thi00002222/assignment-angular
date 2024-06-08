@@ -1,0 +1,19 @@
+<div *ngFor="let task of list_task">
+  <div class="ms-1 text-uppercase">
+    <b>{{ task.ten_task }}</b>
+    <br />
+    {{ task.mo_ta }}
+  </div>
+  <div class="mb-0 px-3 pb-2 border-bottom border-primary d-flex">
+    <div class="col-6">
+    Mức độ ưu tiên: {{ task.quan_trong }} <br> Trạng thái nhiệm vụ:
+      {{ task.trang_thai == true ? "hoàn thành" : "chưa hoàn thành" }}
+    </div>
+    <div class="col-6">
+      Mã nhân viên: {{ task.id_member }}
+      <br> 
+      Mã dự án:
+      {{ task.id_da}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">tên dự án</th>
+        <th scope="col">ngày bắt đầu</th>
+        <th scope="col">thù lao</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let da of list_da">
+        <th scope="row">{{da.id}}</th>
+        <td>{{da.ten_da}}</td>
+        <td>{{da.start|date:'dd-MM-yyyy'}}</td>
+        <td>{{da.tien|number}}VND</td>
+      </tr>
+      
+    </tbody>
+  </table>
